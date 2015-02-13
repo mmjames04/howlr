@@ -1,0 +1,39 @@
+<head>
+  <title>Howlr</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div class="page-wrap">
+  <header>
+  	<h1>howlr</h1>
+  </header>
+  <div class='main'>
+
+  <form class="new-howl-form">
+  	<i class="fa fa-plus fa-3x"></i><br>
+  	<input type="text" name="text" placeholder="Howl Here">
+  </form>
+
+  <div class="howls">
+  		{{#each howls}}
+  			{{> howl}}
+  		{{/each}}
+  </div>
+
+  </div>
+
+  </div>
+  <footer class="site-footer">
+  </footer>
+
+</body>
+
+<template name="howl">
+	<p>{{text}}</p>
+</template>
+
+
+
